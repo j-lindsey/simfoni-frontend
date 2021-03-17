@@ -1,0 +1,37 @@
+/*Main Form Section*/
+form{
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    border:1px solid #bbb;
+    padding: 1em;
+    width: fit-content;
+}
+
+.input-box{
+    padding: 0.5em;
+}
+/*reveal organization boxes if radio button activated*/
+.reveal-if-active {
+    display: block;
+  }
+.organization-form{
+    
+}
+.hidden{
+    display: none;
+}
+
+
+/* reveal organizationb boxes if radio button activated */
+.reveal-if-active {
+    display: block;
+  }
+.abcd-form{
+    
+}
+.hidden{
+    display: none;
+}
+

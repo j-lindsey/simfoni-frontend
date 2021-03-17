@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Registeration Page - Simfoni</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/investregister.css">
+    
+    <!--Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome Icon Link-->
+    <script src="https://use.fontawesome.com/8fd9ed3f89.js"></script>
+
+</head>
+
+<body>
+    <!--Navigation Bar -->
+    <!--sticky keeps navabar at top of page on scroll-->
+    <nav class="sticky">
+        <ul class="menu">
+            <li><img width="40px" ; src="../img/FINAL_SLOGO.png"></li>
+            <!--active-page is used to indicate current location-->
+
+            <li class="item"><a href="#">Home</a></li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Entrepreneur<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Example</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+
+                <a tabindex="0" class="active-page">Development<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Example</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Investor<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Example</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Resources<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Example</a></li>
+                </ul>
+            </li>
+            <!--<li class="item"><a href="#">Blog</a></li>-->
+            <!--<li class="item"><a href="#">Contact</a>-->
+
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <!--Page Header-->
+    <header>
+        <h1>Investor Registeration</h1>
+
+    </header>
+    <!--Page Sections-->
+    <div class="development-form"></div>
+    <form>
+        <h2>Investor registration will require the following information</h2>
+<!-- ========================= -->
+        <div class="input-box">
+            <label for="org">Individual or Organization:</label>
+                    <input type="radio" id="inindOrOrg" name="indOrOrg" value="individual">
+                    <label for="individual">Individual</label>
+                    <input type="radio" id="inindOrOrg" name="indOrOrg" value="organization">
+                    <label for="organization">Organization</label>
+        </div>
+
+ <!--Organization Form Section-->
+        <div class="organization-form hidden">
+                <div class="input-box">
+                    <label for="orgtype">Organization Type:</label>
+                    <!-- <select>
+                        <option value="orgtype">bank</option>
+                        <option value="orgtype">investment company</option>
+                        <option value="orgtype">family office</option>
+                        <option value="orgtype">not-for-profit</option>
+                        <option value="orgtype">foundation</option>
+                        <option value="orgtype">Others</option>
+                    </select> -->
+                    <input type="radio" id="ininsttyp" name="orgtype" value="bank">
+                    <label for="bank">bank</label>
+
+                    <input type="radio" id="ininsttyp" name="orgtype" value="investment company">
+                    <label for="investment company">investment company</label>
+
+                    <input type="radio" id="ininsttyp" name="orgtype" value="family office">
+                    <label for="family office">family office</label>
+
+                    <input type="radio" id="ininsttyp" name="orgtype" value="Not-for-profit">
+                    <label for="not-for-profit foundation">Not-for-profit foundation</label>
+
+                    <input type="radio" id="ininsttyp" name="orgtype" value="other">
+                    <label for="other">Other</label>
+                    
+                </div>
+
+
+        </div>
+
+<!-- ============================== -->
+
+
+        <!-- <div class="input-box">
+            <label for="org">Individual or Institution:</label>
+            <input type="radio" id="inindOrOrg" name="inindOrOrg" value="individual">
+            <label for="individual">Individual</label>
+            <input type="radio" id="inindOrOrg" name="inindOrOrg" value="organization">
+            <label for="organization">Institution</label>
+        </div>
+        <div class="input-box">
+            <label for="subType">If institution, institution Type:</label><br>
+            <input type="radio" id="newBus" name="subType" value="newBus">
+            <label for="newBus">Bank</label>
+            <input type="radio" id="commAsset" name="subType" value="commAsset">
+            <label for="commAsset">investment company</label><br>
+            <input type="radio" id="commRes" name="subType" value="commRes">
+            <label for="commRes">family office</label>
+            <input type="radio" id="econAct" name="subType" value="econAct">
+            <label for="econAct">not-for-profit</label>
+            <input type="radio" id="econAct" name="subType" value="econAct">
+            <label for="econAct">foundation</label>
+            <input type="radio" id="econAct" name="subType" value="econAct">
+            <label for="econAct">Others</label>
+        </div> -->
+        <!--  If Bank-->
+    <div class="abcd-form hidden">
+        <div class="input-box">
+            <label for="subType">If Bank:</label><br>
+            <label for="inbnkfile">Upload public file :</label>
+            <input type="file" id="inbnkfile" name='inbnkfile' required>
+        </div>
+        <div class="input-box">
+            <label for="inregtype">Regulator:</label>
+            <select>
+                <option value="orgTeconDev">FDIC</option>
+                <option value="orgTschool">OCC</option>
+                <option value="orgTpriBus">Federal Reserve</option>                
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label for="inassarea">Assesment area:</label><br>
+            <textarea id="inassarea" name='inassarea' rows="4" cols="33"></textarea>
+        </div>
+    </div>
+        <!--  -->
+        <div class="input-box">
+            <!-- <label for="subNeeds">Submission Needs: (check all that apply)</label><br> -->
+            <div class="input-box">
+                <label for="innaics">NAICS:</label>
+                <input type="text" id="innaics" name='innaics'>
+            </div>
+            <!--  -->
+            <div class="input-box">
+                <label for="inorname">If Organization:</label><br>
+                <label for="inorname">Organization Name :</label>
+                <input type="text" id="inorname" name='inorname' required>
+            </div>
+            <div class="input-box">                
+                <label for="inoradd">Organization Address :</label>
+                <input type="text" id="inoradd" name='inoradd' required>
+            </div>
+            <div class="input-box">                
+                <label for="inordesc">Organization Description :</label>
+                <input type="text" id="inordesc" name='inordesc' required>
+            </div>
+            <div class="input-box">                
+                <label for="inapasst">	Approximate assets :</label>
+                <input type="text" id="inapasst" name='inapasst' required>
+            </div>
+            <div class="input-box">                
+                <label for="inperinst">	Peer institutions (3 required):</label>
+                <input type="text" id="inperinst" name='inperinst' required>
+            </div>
+           
+        <div class="input-box">
+            <label for="infname">First Name</label>
+            <input type="text" id="infname" name='infname' placeholder="Tim" required>
+        </div>
+
+        <div class="input-box">
+            <label for="inlname">Last Name</label>
+            <input type="text" id="inlname" name='inlname' placeholder="Green" required>
+        </div>
+        <div class="input-box">
+            <label for="inphone">Phone Number</label>
+            <input type="tel" id="inphone" name='inphone' placeholder="XXX-XXX-XXXX" required>
+        </div>
+        <div class="input-box">
+            <label for="inemail">Email</label>
+            <input type="email" id="inemail" name='inemail' placeholder="tim.green@rbc.com" required>
+        </div>
+        <!--  -->
+        <div class="input-box">
+            <label for="subNeeds">Area of interest </label><br>
+            <input type="checkbox" id="inecdev" name='inecdev'><label for="inecdev">economic development</label><br>
+            <input type="checkbox" id="incomdev" name='incomdev'><label for="incomdev">community development</label><br>
+            <input type="checkbox" id="inlmisp" name='inlmisp'><label for="inlmisp">LMI entrepreneur support</label><br>
+            <input type="checkbox" id="inrehbst" name='inrehbst'><label for="inrehbst">rehabilitation/stabilization</label><br>
+            <input type="checkbox" id="injobcr" name='injobcr'><label for="injobcr">job creation</label><br>
+            <input type="checkbox" id="ininlen" name='ininlen'><label for="ininlen"> innovative lending</label><br>
+            <input type="checkbox" id="inprreent" name='inprreent'><label for="inprreent">prison re-entry</label><br>
+            <input type="checkbox" id="inmin" name='inmin'><label for="inmin">minorities</label><br>
+            <input type="checkbox" id="invetr" name='invetr'><label for="invetr">veterans</label><br>
+        </div>
+        <!--  -->
+         <!--  -->
+         <div class="input-box">
+            <label for="inintned">Describe interests/needs </label><br>
+            <textarea  id="inintned" name='inintned' rows="4" cols="33"></textarea>
+        </div>
+        <!--  -->
+        <div class="input-box">
+            <label for="subCost">Estimated Level of investment(in thousand dollars/year)</label>
+            <input type="number" id="inestinv" name='inestinv'>
+        </div></br></br></br>
+        <!--  -->
+        <!-- <div class="input-box">
+            <label for="inestinv">Estimated level of investment (dollars/year)</label><br>
+            <textarea type="number" id="inestinv" name='inestinv' rows="4" cols="33"></textarea>
+        </div> -->
+        <!--  -->
+
+        <!-- 
+           
+        <div class="input-box">
+            <label for="org">Individual or Institution:</label>
+            <input type="radio" id="individual" name="indOrOrg" value="individual"> 
+            <label for="organization">Organization</label>
+        </div>
+        Organization Form Section-->
+        <!-- 
+        <div class="organization-form hidden">
+            <div class="input-box">
+                <label for="NAICS">NAICS:</label>
+                <input type="text" id="naics" name='naics'>
+            </div>
+            <div class="input-box">
+                <label for="orgName">Organization Name:</label>
+                <input type="text" id="orgName" name='norgName'>
+            </div>
+            <div class="input-box">
+                <label for="orgAddress">Organization Address:</label>
+                <input type="text" id="orgAddress" name='orgAddress'>
+            </div><div class="input-box">
+                <label for="orgCity">City</label>
+                <input type="text" id="orgCity" name='orgCity'>
+            </div>
+            <div class="input-box">
+                <label for="orgState">State:</label>
+                <select>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="orgZipCode">Zip Code:</label>
+                <input type="text" id="orgZipCode" name='orgZipCode'>
+            </div>
+            <div class="input-box">
+                <label for="orgType">Organization Type:</label>
+                <select>
+                    <option value="orgTeconDev">Economic Development</option>
+                    <option value="orgTschool">School</option>
+                    <option value="orgTpriBus">Private Business</option>
+                    <option value="orgTgovEnt">Government Entity</option>
+                    <option value="orgTind">Individual</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="orgDescription">Organization Description:</label><br>
+                <textarea id="orgDescription" name='orgDescription' rows="4" cols="33"></textarea>
+            </div>
+        </div>
+        <div class="input-box">
+            <label for="subTitle">Submission Title:</label>
+            <input type="text" id="subTitle" name='subTitle' required>
+        </div>
+        <div class="input-box">
+            <label for="subDescription">Submission Description:</label><br>
+            <textarea id="subDescription" name='subDescription' rows="4" cols="33"></textarea>
+        </div>
+        <div class="input-box">
+            <label for="subType">Submission Type:</label><br>
+            <input type="radio" id="newBus" name="subType" value="newBus">
+            <label for="newBus">New Business</label>
+            <input type="radio" id="commAsset" name="subType" value="commAsset">
+            <label for="commAsset">Community Asset</label><br>
+            <input type="radio" id="commRes" name="subType" value="commRes">
+            <label for="commRes">Community Resource</label>
+            <input type="radio" id="econAct" name="subType" value="econAct">
+            <label for="econAct">Economic Activity</label>
+        </div>
+        <div class="input-box">
+            <label for="subNeeds">Submission Needs: (check all that apply)</label><br>
+            <input type="checkbox" id="subDesign" name='subNeeds'><label for="subDesign">Design</label><br>
+            <input type="checkbox" id="subBid" name='subNeeds'><label for="subBid">Bid</label><br>
+            <input type="checkbox" id="subBuild" name='subNeeds'><label for="subBuild">Build</label><br>
+            <input type="checkbox" id="subConstruct" name='subNeeds'><label for="subConstruct">Construct</label><br>
+            <input type="checkbox" id="subMaintain" name='subNeeds'><label for="subMaintain">Maintain</label><br>
+            <input type="checkbox" id="subOwn" name='subNeeds'><label for="subOwn">Own</label><br>
+            <input type="checkbox" id="subOperate" name='subNeeds'><label for="subOperate">Operate</label><br>
+            <input type="checkbox" id="subFinance" name='subNeeds'><label for="subFinance">Finance</label><br>
+            <input type="checkbox" id="subTransfer" name='subNeeds'><label for="subTransfer">Transfer</label><br>
+        </div>
+        <div class="input-box">
+            <label for="subCurrStage">Current Stage of Development Need:</label>
+            <input type="text" id="subCurrStage" name='subCurrStage'>
+        </div>
+        <div class="input-box">
+            <label for="subAddress">Location:</label><br>
+            <label for="subAddress">Address: (optional)</label>
+            <input type="text" id="subAddress" name='subAddress'>
+        </div>
+        <div class="input-box">
+            <label for="subCity">City</label>
+            <input type="text" id="subCity" name='subCity'>
+        </div>
+        <div class="input-box">
+            <label for="subState">State:</label>
+            <select>
+                <option value="subAL">Alabama</option>
+                <option value="subAK">Alaska</option>
+                <option value="subAZ">Arizona</option>
+                <option value="subAR">Arkansas</option>
+                <option value="subCA">California</option>
+                <option value="subCO">Colorado</option>
+                <option value="subCT">Connecticut</option>
+                <option value="subDE">Delaware</option>
+                <option value="subDC">District Of Columbia</option>
+                <option value="subFL">Florida</option>
+                <option value="subGA">Georgia</option>
+                <option value="subHI">Hawaii</option>
+                <option value="subID">Idaho</option>
+                <option value="subIL">Illinois</option>
+                <option value="subIN">Indiana</option>
+                <option value="subIA">Iowa</option>
+                <option value="subKS">Kansas</option>
+                <option value="subKY">Kentucky</option>
+                <option value="subLA">Louisiana</option>
+                <option value="subME">Maine</option>
+                <option value="subMD">Maryland</option>
+                <option value="subMA">Massachusetts</option>
+                <option value="subMI">Michigan</option>
+                <option value="subMN">Minnesota</option>
+                <option value="subMS">Mississippi</option>
+                <option value="subMO">Missouri</option>
+                <option value="subMT">Montana</option>
+                <option value="subNE">Nebraska</option>
+                <option value="subNV">Nevada</option>
+                <option value="subNH">New Hampshire</option>
+                <option value="subNJ">New Jersey</option>
+                <option value="subNM">New Mexico</option>
+                <option value="subNY">New York</option>
+                <option value="subNC">North Carolina</option>
+                <option value="subD">North Dakota</option>
+                <option value="subOH">Ohio</option>
+                <option value="subOK">Oklahoma</option>
+                <option value="subOR">Oregon</option>
+                <option value="subPA">Pennsylvania</option>
+                <option value="subRI">Rhode Island</option>
+                <option value="subSC">South Carolina</option>
+                <option value="subSD">South Dakota</option>
+                <option value="subTN">Tennessee</option>
+                <option value="subTX">Texas</option>
+                <option value="subUT">Utah</option>
+                <option value="subVT">Vermont</option>
+                <option value="subVA">Virginia</option>
+                <option value="subWA">Washington</option>
+                <option value="subWV">West Virginia</option>
+                <option value="subWI">Wisconsin</option>
+                <option value="subWY">Wyoming</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label for="subZipCode">Zip Code: (Optional)</label>
+            <input type="text" id="subZipCode" name='subZipCode'>
+        </div>
+        <div class="input-box">
+            <label for="subCost">Estimated Cost (If Known):</label>
+            <input type="number" id="subCost" name='subCost'>
+        </div> -->
+    </form>
+
+    <footer>
+        <div class="disclaimer">
+            <p>Disclaimers and Disclosures</p>
+        </div>
+        <div class="footer">
+            <ul class="footer-nav">
+                <li><a href="#">Contact Info</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul class="footer-logo">
+                <li><img width="30px" ; src="../img/FINAL_SLOGO.png"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+   <!--  <script src="../js/development.js"></script> -->
+
+    <script src="../js/investregister.js"></script>
+</body>
+
+</html>

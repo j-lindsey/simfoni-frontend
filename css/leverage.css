@@ -1,0 +1,94 @@
+/* General Style
+Color Palette:
+Logo Colors: #678b99 (darker blue), #46697d (lighter blue)
+Text colors: #0a090c(black), white
+*/
+
+/*********************************************
+*Container styles
+*********************************************/
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+  
+    grid-gap: 25px;
+    margin-bottom: 15px;
+
+}
+.xcontainer-grid div:nth-child(even) {background-color: rgb(207, 127, 61);}
+.xcontainer-grid div:nth-child(odd) {background-color: rgb(191, 121, 219);}
+
+.free-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+   align-content: center;
+    grid-gap: 10px;
+    margin-left: 5%;
+}
+.xfree-grid div:nth-child(even) {background-color: rgb(110, 204, 165);}
+.xfree-grid div:nth-child(odd) {background-color: rgb(228, 226, 112);}
+
+
+.grid__img {
+    width: 350px;
+    height: 250px;
+   /* border: solid 3px blue;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+   background-color: #678b99;
+   border: solid 0.4vh black;
+   margin-top: 1vh; 
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+   cursor: pointer;
+   text-align: center;
+   width: 315px;
+   font-size: 2em;
+   position: center;
+   outline: none;
+
+}
+.btn:hover {background-color: #678b99}
+
+.btn:active {
+  background-color: #678b99;
+  /*box-shadow: 0 5px #666;*/
+  transform: translateY(4px);
+}
+
+
+p {margin: 0 1%;
+font-size: 1.5em;
+
+text-align:center;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #678b99;
+    margin-left: 5%;
+    /*border-bottom: dashed 0.5vh #46697d;*/
+    margin-top: 15px;
+    
+   margin-bottom: 1px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #678b99;
+    margin-left: 5%;
+    margin-bottom: 1px;
+    /*border-bottom: dashed 0.5vh #46697d;*/
+    
+}
+
+/*
+@media screen and (min-width: 736px) {
+
+}

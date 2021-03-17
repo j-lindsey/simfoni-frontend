@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simfoni Community Development Corporation</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/entrepregistration.css"
+    />
+    <!--Google Fonts Link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icon Link-->
+    <script src="https://use.fontawesome.com/8fd9ed3f89.js"></script>
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon_io/site.webmanifest" />
+  </head>
+
+  <body>
+    <!--Navigation Bar -->
+    <!--sticky keeps navabar at top of page on scroll-->
+    <nav class="sticky">
+      <ul class="menu">
+        <li><img width="40px" ; src="../img/FINAL_SLOGO.png" /></li>
+        <!--active-page is used to indicate current location-->
+        <li class="item"><a class="active-page" href="index.html">Home</a></li>
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Member<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem">
+              <a href="entrepreneur.html">Goals Catalog</a>
+            </li>
+          </ul>
+        </li>
+        <!--<li class="item has-submenu">
+          <a tabindex="0"
+            >Development<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem">
+              <a href="development.html">Fill Out Form</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Investor<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="investor.html">Overview</a></li>
+          </ul>
+        </li>
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Resources<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="resources.html">Overview</a></li>
+          </ul>
+        </li>-->
+        <!--<li class="item"><a href="#">Blog</a></li>-->
+        <!--<li class="item"><a href="#">Contact</a>-->
+
+        <li class="item button"><a href="login.html">Log In</a></li>
+        <li class="item button secondary">
+          <a href="entrepregistration.html">Register</a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--Page Header-->
+    <header>
+      <h1>Member</h1>
+    </header>
+    <!--Page Sections-->
+    <!--<div class="development-form"></div>-->
+    <!--question-->
+    <!--Tracking Development Needs Section-->
+    <!--<section class="sec-form">
+        <button class="btn checkStatus">Check Status</button>
+    </section>-->
+    <!--Submit Development Needs Form-->
+    <section class="sec-form">
+      <!--question-->
+      <h2>Registration</h2>
+      <div class="confirm hidden">
+        <!--question-->
+        <p>Thank you, we have received your submission.</p>
+        <!--<button class="anotherSub">Yes</button>-->
+      </div>
+      <form action = "http://localhost:3000/entrepregistration/newcust" method = "post">
+      <!-- <form id="devForm"> -->
+        <div class="input-box">
+          <label for="Password">*Enter Your Password:</label>
+          <input
+            type="Password"
+            id="Password"
+            name="Password"
+            required
+          />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="fname">*First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstName"
+            placeholder="John"
+            required
+          />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="lname">*Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastName"
+            placeholder="Doe"
+            required
+          />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="phone">*Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="XXX-XXX-XXXX"
+            required
+          />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="email">*Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john.doe@gmail.com"
+            required
+          />
+        </div>
+        <br/>
+        <div class="input-box">
+          <!--<label for="subAddress">Location:</label><br>-->
+          <label for="subAddress">Mailing Address:</label>
+          <input type="text" id="subAddress" name="subAddress" />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="subCity">City:</label>
+          <input type="text" id="subCity" name="subCity" />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="subState">State:</label>
+          <select name="subState">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="subZipCode">Zip Code:</label>
+          <input type="text" id="subZipCode" name="subZipCode" />
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="birthdate">Date of Birth:</label>
+          <input
+            type="date"
+            id="birthdate"
+            placeholder="yyyy-mm-dd"
+            name="birthdate"
+          />
+        </div>
+        <br/>
+        <!--<div id="from-datepicker" class="input-append date">
+            <label for="birthdate">Date of Birth</label>
+            <input data-format="dd/MM/yyyy" type="text" placeholder="dd/MM/yyyy"></input><span class="add-on" />
+            </div>-->
+
+        <div class="input-box">
+          <label for="subDescription">Education Details:</label><br />
+          <textarea
+            id="subDescription"
+            name="subDescription"
+            rows="4"
+            cols="33"
+          ></textarea>
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="subWorkhist">Work History:</label><br />
+          <textarea
+            id="subWorkhist"
+            name="subWorkhist"
+            rows="4"
+            cols="33"
+          ></textarea>
+        </div>
+        <br/>
+        <div class="input-box">
+          <label for="levOfInv">Employment Status:</label>
+          <select name="levOfInv">
+            <option value="employed">Employed</option>
+            <option value="independentstatus">Independent</option>
+            <option value="unemployeed">Unemployed</option>
+          </select>
+        </div>
+        <br/>
+        <!--<div class="input-box">
+                <label for="levOfInv">Workplace Inventory Survey:</label>
+                <select name="levofInv">
+                    <option value="notstarted">Not Started</option>
+                    <option value="inprogress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+    <div class="input-box">
+                <label for="subDescription">Goals Survey:</label><br>
+                <textarea id="subDescription" name='subDescription' rows="4" cols="33"></textarea>
+            </div>-->
+        <div class="input-box">
+          <label for="ManProfser">Managed Profile Services:</label>
+          <select name="ManProfser">
+            <option value="payasyougo">Pay As You Go</option>
+            <option value="subscription">Subscription</option>
+            <option value="credit">Credit</option>
+          </select>
+        </div>
+        <br/>
+        <!--<div class="input-box">
+                <label for="subCost">Estimated Cost (If Known):</label>
+                <input type="number" id="subCost" name='subCost'>
+            </div>
+            <div class="input-box">
+                <label for="levOfInv">Point of Contact Level of Involvement:</label>
+                <select name="levofInv">
+                    <option value="partner">Partnership</option>
+                    <option value="independent">Independent</option>
+                    <option value="autonomous">Autonomous</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="resourcesAva">Available Resources:</label><br>
+                <textarea id="resourcesAva" name='resourcesAva' rows="4" cols="33"></textarea>
+            </div>
+            <div class="input-box">
+                <label for="potPartners">Potential Partners/Project Coalition:</label><br>
+                <textarea id="potPartners" name='potPartners' rows="4" cols="33"></textarea>
+            </div>-->
+        <!--preventDefault() prevents page from automatic submission of formdata-->
+        <div>
+          <!--<button class="btn submitDev" onclick="event.preventDefault()">
+            Submit
+          </button>-->
+
+          <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+          <!--<input type="submit" value="Register">-->
+          <input type="submit" value="Register" />
+          <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+        </div>
+      </form>
+      <br />
+    </section>
+
+    <footer>
+      <div class="disclaimer">
+        <p>Disclaimers and Disclosures</p>
+      </div>
+      <div class="footer">
+        <ul class="footer-nav">
+          <li><a href="#">Contact Us:</a></li>
+          <!--<li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>-->
+          <address>
+          <a href="mailto:tez@simfonicapital.com">tez@simfonicapital.com</a><br>
+          <a href="tel:+14175015701">(417) 501-5701</a>
+          </address>
+        </ul>
+        <ul class="footer-logo">
+          <li><img width="30px" ; src="../img/FINAL_SLOGO.png" /></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+    <!--<script src="../js/development.js"></script>-->
+  </body>
+</html>

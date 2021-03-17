@@ -1,0 +1,115 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 2%;
+}
+#board{
+    display: flex;
+}
+.ent_page{
+    width: 60vw;
+   
+}
+#curPage{
+    margin: 0 5%;
+   
+}
+.ent_dev{
+    display: flex;
+}
+.containers{
+    margin: 0 2%;
+   
+}
+#todo{
+    display: flex;
+    flex-direction: column;
+}
+.todo-item{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 0 1%;
+}
+.todo-item div{
+    padding: 0.5%;
+}
+
+h5, h4, h3{
+    margin: 0;
+}
+
+
+/*hide whatever contains hidden*/
+.hidden{
+    display: none;
+}
+/*preview container box*/
+.preview{
+    padding: 2%;
+}
+
+.container2{
+    border: 1px solid black;
+    padding: 0.5%;
+    margin: 1% 0;
+}
+
+.colorChoice{
+    margin: 2% 0;
+}
+
+.step{
+    margin: 2% 0;
+}
+/*laying out queue and status boxes*/
+.queueFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 0 6%;
+    
+}
+.queueFlex h3{
+     
+}
+.addCurrent{
+   display: flex;
+   justify-content: flex-end; 
+}
+.queueFlex-check{
+    flex: 0.2;
+}
+#entrepreneur{
+   
+}
+/*for internal page view*/
+.governance{ 
+    width: 20vw;
+}
+.intelligence{
+    width: 20vw;
+}
+.coordination{
+    width: 20vw;
+}
+.capital{
+    width: 20vw;
+}
+
+/*type of boxes*/
+textarea{
+    width: 15vw;
+}
+input[type=text]{
+    width: 15vw;
+}
+button{
+    margin: 1% 1%;
+}
+

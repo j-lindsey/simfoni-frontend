@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form </title>
+						<!-- layout mainA start here -->
+
+<!-- <title>Investment Opportunities Page</title> -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+ <!-- <script type="text/javascript" src="../investor.js"></script>
+ <script type="text/javascript" src="gmapapp.js"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome Icon Link-->
+    <script src="https://use.fontawesome.com/8fd9ed3f89.js"></script>
+ <!--Favicon-->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="../favicon_io/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../favicon_io/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../favicon_io/site.webmanifest" />
+
+<!--      layout mainA ends here -->
+	</head>
+	<body>
+									<!--  -->
+	<!--Navigation Bar -->
+    <!--sticky keeps navabar at top of page on scroll-->
+    <nav class="sticky">
+      <ul class="menu">
+        <li><img width="40px" ; src="../img/FINAL_SLOGO.png" /></li>
+        <!--active-page is used to indicate current location-->
+        <li class="item"><a class="active-page" href="../html/index.html">Home</a></li>
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Member<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem">
+              <a href="entrepreneur.html">Goals Catalog</a>
+            </li>
+          </ul>
+        </li>
+        <!--<li class="item has-submenu">
+          <a tabindex="0"
+            >Development<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem">
+              <a href="development.html">Fill Out Form</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Investor<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="investor.html">Overview</a></li>
+          </ul>
+        </li>
+        <li class="item has-submenu">
+          <a tabindex="0"
+            >Resources<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
+          <ul class="submenu">
+            <li class="subitem"><a href="resources.html">Overview</a></li>
+          </ul>
+        </li>-->
+        <!--<li class="item"><a href="#">Blog</a></li>-->
+        <!--<li class="item"><a href="#">Contact</a>-->
+
+        <li class="item button"><a href="../html/login.html">Log In</a></li>
+        <li class="item button secondary">
+          <a href="entrepregistration.html">Register</a>
+        </li>
+        <li class="toggle">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--Page Header-->
+    <header>
+        <h1>Log in</h1>
+    </header>
+									<!--  -->
+		<div class="login-form">
+            <!-- <h1>Login Form</h1> -->
+        </br>  </br> </br> </br> </br>
+      <form action="http://localhost:3000/login/vlogin" method="POST">
+                <!-- <input type="text" name="username" placeholder="Username" required> -->
+                <input type="text" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Password" required>
+                
+                <input type="submit"  value = "Submit">  
+                
+                <div>
+                </br> </br> </br>
+                <span>Forgot <a href="forgetpassword.html">password?</a></span>  
+                </div>
+      </form>
+    </div>
+    </br>  </br> </br> </br> </br>
+    <!-- Footer  start here  -->
+    <footer>
+            <div class="disclaimer">
+              <p>Disclaimers and Disclosures</p>
+            </div>
+            <div class="footer">
+              <ul class="footer-nav">
+                <li><a href="#">Contact Us:</a></li>
+                <!--<li><a href="#">About Us</a></li>
+                      <li><a href="#">Privacy Policy</a></li>-->
+                <address>
+                <a href="mailto:tez@simfonicapital.com">tez@simfonicapital.com</a><br>
+                <a href="tel:+14175015701">(417) 501-5701</a>
+                </address>
+              </ul>
+              <ul class="footer-logo">
+                <li><img width="30px" ; src="../img/FINAL_SLOGO.png" /></li>
+              </ul>
+            </div>
+		</footer>
+		<script src="../js/index.js"></script>
+		<!-- footer ends here -->
+	</body>	
+</html>

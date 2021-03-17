@@ -1,0 +1,30 @@
+main{
+    margin: 5%;
+}
+.newCont label{
+    padding: 1rem;
+}
+.rank label{
+    padding: 0 5%;
+    padding-right: 15%;
+}
+/*type of boxes*/
+textarea{
+    width: 50vw;
+}
+input[type=text]{
+    width: 50vw;
+}
+button{
+    padding: 1vmin;
+    margin: 3vmin 1vmin;
+    background: #46697d;
+    border: 1px #46697d solid;
+}
+button:hover{
+    background: rgb(70, 105, 125, 0.8);
+}
+select{
+    width: 15ch;
+    margin: 0.5vmin 1vmin;
+}

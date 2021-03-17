@@ -1,0 +1,30 @@
+section{
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    margin: 2em;
+    padding: 1em;
+}
+section h2{
+    font-size: 2em;
+    color: #678b99;
+    margin: 0 5%;
+}
+p{
+    margin: 0 5%;
+}
+hr {
+    margin-top: 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#bbb;
+    height: 1px;
+  }
+.actionItems{
+    margin: 0 5%;
+}
+iframe{
+    margin: 0 5%;
+}
