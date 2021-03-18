@@ -1,5 +1,5 @@
 /*url address*/
-const url = "http://localhost:3000";
+const url = "https://vast-sands-15850.herokuapp.com/";
 
 /*fetching venture catalog info from database*/
 fetch(url + "/venture")
