@@ -29,9 +29,9 @@ fetch(url + '/goals')
     .then(response => response.json())
     .then(filters => {
         console.log(filters);
-        rankCount = filters.recordset[filters.recordset.length - 1].ObjectRank;
+        rankCount = filters[filters.length - 1].objectrank;
         let filterDOM = document.querySelector('.filters');
-        filters.recordset.forEach(tag => {
+        filters.forEach(tag => {
             let button = createButton(tag);
             filterDOM.insertAdjacentElement('beforeEnd', button);
         })
