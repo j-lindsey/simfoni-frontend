@@ -40,9 +40,9 @@ fetch(url + '/goals')
 /*create button filter*/
 function createButton(tag) {
     let button = document.createElement('button');
-    button.appendChild(document.createTextNode(tag.ObjectName));
-    button.setAttribute('value', tag.ObjectName);
-    button.setAttribute('name', tag.TagName);
+    button.appendChild(document.createTextNode(tag.objectname));
+    button.setAttribute('value', tag.objectname);
+    button.setAttribute('name', tag.tagname);
     button.setAttribute('class', 'filter');
     return button;
 }
@@ -123,9 +123,9 @@ function clear() {
         .then(response => response.json())
         .then(filters => {
             console.log(filters);
-            rankCount = filters.recordset[filters.recordset.length - 1].ObjectRank;
+            rankCount = filters[filters.length - 1].objectrank;
             let filterDOM = document.querySelector('.filters');
-            filters.recordset.forEach(tag => {
+            filters.forEach(tag => {
                 let button = createButton(tag);
                 filterDOM.insertAdjacentElement('beforeEnd', button);
             })
@@ -215,7 +215,7 @@ function updateFilters(tagName) {
         .then(response => response.json())
         .then(filters => {
             let filterDOM = document.querySelector('.filters');
-            filters.recordset.forEach(tag => {
+            filters.forEach(tag => {
                 let button = createButton(tag);
                 filterDOM.insertAdjacentElement('beforeEnd', button);
             })
