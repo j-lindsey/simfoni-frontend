@@ -1,5 +1,5 @@
 /*url address*/
-const url = "https://vast-sands-15850.herokuapp.com/";
+const url = "https://vast-sands-15850.herokuapp.com";
 
 /*store selected buttons*/
 let goals = [];
